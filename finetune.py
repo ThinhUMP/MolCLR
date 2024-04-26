@@ -14,7 +14,8 @@ from torch.optim.lr_scheduler import CosineAnnealingLR
 from sklearn.metrics import roc_auc_score, mean_squared_error, mean_absolute_error
 
 from dataset.dataset_test import MolTestDatasetWrapper
-
+import warnings
+warnings.filterwarnings("ignore")
 
 apex_support = False
 try:
